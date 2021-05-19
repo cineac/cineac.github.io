@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Test leaflet</title>
+
+<script src="jquery-3.5.1.js"></script>
+<link rel="stylesheet" href="leaflet/leaflet.css">
+<script src="leaflet/leaflet.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="traces.js"></script>
+<script src="points.js"></script>
+<script src="meta_data.js"></script>
+<script src="main.js"></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier-Leaflet/0.2.6/oms.min.js"></script>
+
+
+</head>
+<body>
+
+    <div class="top_level">
+        
+        <div class="title">
+            SITE SHS CINEAC
+        </div>
+
+        <div class="panes">
+
+            <div class="index_pane sub_pane">
+            	<span onclick="open_filter()" class="filter_btn">&#9776</span>
+                <div class="sub_title">
+                    Index
+                </div>
+                <div id="filter_pane" style="display:none">
+                	<div class="sub_title">Filter</div>
+
+                	<div class="filter_line"><input type="checkbox" id="filter_date"><span>Date du </span><input id="filter_debut" type="date" value="1900-01-01">
+                	<span> au </span><input id="filter_fin" type="date" value="2000-01-01"></div>
+
+                	<div class="filter_line"><input type="checkbox" id="filter_theme"><span>Theme </span>
+                	<select id="filter_theme_val">
+						<option value="Loisirs">Loisirs</option>
+						<option value="Expression populaire">Expression populaire</option>
+						<option value="Expression officielle">Expression officielle</option>
+						
+					</select></div>
+
+					<div class="filter_line"><input type="checkbox" id="filter_epoch"><span>Epoque </span>
+                	<select id="filter_epoch_val">
+						<option value="Guerre (1939-1945)">Guerre (1939-1945)</option>
+						<option value="Après guerre (1946-1968)">Après guerre (1946-1968)</option>
+						<option value="Avant-guerre (1929-1938)">Avant-guerre (1929-1938)</option>
+						
+					</select></div>
+
+                </div>
+	            <div class="scroll_pane">
+	                <div class="index">
+	                </div>
+
+	                <div class="index_content">
+	                	<table style="width:100%" id="index_table">
+
+	                	</table>
+
+	                </div>
+
+	                <div class="padding_vert">
+	                </div>
+	            </div>
+
+            </div>
+
+            <div class="map_pane sub_pane">
+                <div class="sub_title">
+                    Map
+                </div>
+                <div class="scroll_pane">
+	                <div class="map" id="mapid"></div>
+	                <div id="map_desc">
+	                   
+
+	                </div>
+	                <div class="padding_vert">
+	                </div>
+	            </div>
+            </div>
+
+            <div class="video_pane sub_pane">
+                <div class="sub_title">
+                    Video
+                </div>
+                <div class="scroll_pane">
+	                <div id="video" class="video">
+	                    
+	                </div>
+	                <div id="video_desc">
+	                    
+	                </div>
+
+	                <div class="padding_vert">
+	                </div>
+	            </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+</html> 

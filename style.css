@@ -1,0 +1,199 @@
+html { height: 100%; } body { height: 98%; }
+
+
+td {
+	margin-left:0px;
+
+	padding-right: 20px;
+	text-align: left;
+}
+
+.top_level {
+	display:flex;
+	flex-direction: column;
+	position:absolute;
+	top:0;
+	bottom: 5px;
+	left:2px;
+	right:2px;
+}
+
+
+.title {
+	font-size:40px;
+	margin:auto;
+	flex-grow: 0;
+
+
+}
+
+.sub_title {
+	font-size:25px;
+	margin:auto;
+	text-align: center;
+
+
+}
+
+
+.panes {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+
+
+.index_pane {
+	width: 20%;
+}
+
+.map_pane {
+	width: 39%;
+}
+
+.video_pane {
+	width: 39%;
+}
+
+.sub_pane {
+	box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+	margin-left:auto;
+	margin-right:auto;
+	height:92vh;
+}
+.scroll_pane {
+	overflow:scroll;
+	height:95%;
+	margin-bottom: 5px;
+	
+	
+	
+
+}
+
+.padding_vert {
+	margin:auto;
+	padding:auto;
+	flex-grow: 1;
+}
+
+.map {
+	height:500px;
+	margin:20px;
+	border:1px solid black;
+}
+
+.video {
+	height:500px;
+	margin:20px;
+	border:1px solid black;
+}
+
+video {
+	height:500px;
+	margin:auto;
+}
+
+.inner_video {
+	margin:auto;
+	margin-bottom: 0px;
+}
+
+.video_desc_item {
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.map_desc_item {
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.video_item {
+  padding: auto;
+  height: 60px;
+  cursor:pointer;
+  display:flex;
+  border-collapse: collapse;
+}
+
+.video_item:hover {
+  background-color: blue;
+}
+
+.video_id {
+  width:40px;
+  margin:auto 0px auto 0px;
+  padding-left:5px;
+}
+.video_image {
+  width:100px;
+  height: 60px;
+  margin:auto 0px auto 0px;
+  padding-left:5px;
+}
+.video_name {
+  width:200px;
+  margin:auto 0px auto 0px;
+  padding-left:5px;
+}
+.video_year {
+  width:100px;
+  margin:auto 0px auto 0px;
+  padding-left:5px;
+}
+.video_description {
+  padding:auto;
+  margin:auto auto auto 0px;
+  padding-left:5px;
+}
+
+.article_citation {
+	font-size: 12px;
+	color:gray;
+}
+
+#video_desc {
+	margin:20px;
+}
+
+.article {
+	margin: 20px;
+}
+
+.article_title {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.article_text {
+	font-size: 14px;
+	text-align: justify;
+}
+
+#map_desc {
+	margin:20px;
+}
+
+.index_content {
+	margin:20px;
+}
+
+
+
+.filter_btn {
+	text-align: left;
+	cursor: pointer;
+	margin-left: 5px;
+	font-size:20px;
+}
+
+.filter_line {
+	font-size: 14px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
