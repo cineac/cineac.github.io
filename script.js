@@ -193,6 +193,9 @@ function write_index_element(item, index) {
 				return L.marker(latlng, {icon : icon_orange});
 			}
 			if(properties["thème"] == "Expression officielle") {
+				return L.marker(latlng, {icon : icon_orange});
+			}
+			if(properties["thème"] == "Parade") {
 				return L.marker(latlng, {icon : icon_red});
 			}
 		},
