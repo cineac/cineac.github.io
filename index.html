@@ -14,27 +14,55 @@
 <script src="meta_data.js"></script>
 <script src="main.js"></script>
 <script src="script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier-Leaflet/0.2.6/oms.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
 <body>
 
+	
+
+	
+
     <div class="top_level">
-        
-        <div class="title">
-            SITE SHS CINEAC
+    	<div class="acceuil" id="acceuil">
+  		<a href="javascript:void(0)" class="closebtn" onclick="close_page()">&times;</a>
+
+  		<div class="container">
+  		<div class="article_title" style="color:white">à propos</div>
+
+  		<div class="article_text" style="color:white">
+  			<p>Cinéac Lausanne est un cinéma qui a ouvert ses portes en 1938 sur la rue St François. Il proposait un format de diffusion d’une heure environ, répété en boucle durant la journée, et composé à la fois de reportages liés à l’actualité internationale, de films de divertissements, et d’une production interne de reportages sur l’actualité locale. Il fut finalement fermé en 1969, mais une partie de ces sources audiovisuelles a été récupérée par les archives de la ville de Lausanne, librement consultable en ligne. </p>
+			<p>Ce travail propose de revaloriser de ces précieuses ressources historiques, en leur offrant visibilité, lisibilité et contexte. Le premier pas a alors consisté à construire une connaissance approfondie de ces vidéos, à travers leur visionnage et la lecture des métadonnées qui leur sont liées, nous permettant ainsi de les situer et de les placer dans leur contexte géographique. Ces sources (audio)visuelles étant souvent muettes, nous avons également pris la décision de leur restituer une littérature en les associant à des articles de presse de l’époque directement liés aux événements présentés dans les vidéos. </p>
+			<p>Les vidéos sont présentées sur une page web contenant des informations contextuelles historiques et géographiques. L’utilisateur peut également trier les vidéos à l'aide d’un filtre et explorer les thématiques et époques que nous avons catégorisées. </p>
+			<p>Ce travail vise donc à offrir une lecture contextuelle et faciliter la lisibilité de certaines tendances tout au long de l’histoire de Cinéac, au travers d’un travail de catégorisation. </p>
+			<p>Nous avons procédé en premier lieu à une différenciation en thèmes, qui semblaient émerger du corpus. Tout d’abord, la politique, que nous choisi de sous-catégoriser, en distinguant d’un côté, un caractère plus populaire, lié aux manifestations et revendications, et de l’autre côté, l’expression officielle du pouvoir en place, afin de pouvoir observer la présence et le poids de chacun dans l’oeuvre de Cinéac Lausanne. Nous trouvons ensuite le thème des parades, regroupant défilés, exercices militaires, pompiers, puis finalement le thème des loisirs, qui englobe les événements liés au sport, les célébrations, les fêtes et traditions. </p>
+			<p>L’analyse croisée des informations apportées par la catégorisation en thèmes d’une part, et la cartographie de l’autre, permet de mettre en lumière non seulement, les lieux mis en valeurs par les reportages Cinéac, mais aussi de mesurer la portée symbolique, culturelle, de certains lieux. On remarque en effet une certaine récurrence quant au caractère des événements filmés, à des endroits particuliers. Une grande partie du discours politique officiel lausannois s’affiche sur la place de la Riponne ou la place du Château, alors qu’un grand nombre de défilés militaires se déroulent plutôt sur l’esplanade de Montbenon. Les activités sportives quant à elles sont largement présentes dans le nouveau développement des rives liant Ouchy à Vidy. </p>
+			<p>La troisième catégorisation effectuée est celle des époques, avec pour objectif de rendre visible l’évolution de la forme urbaine de la ville, mais aussi l’évolution des activités qui y prennent place. Au tournant de la deuxième guerre, on observe par exemple une réduction dans la représentation des parades et défilés militaires, au profit d’un développement du côté des activités de loisirs. Cette chronologie fait également apparaître des moments charnières dans l’histoire de la ville, comme l’armistice de 1945, moment marquant dans la vie des lausannois.es, ou encore l’exposition nationale de 64, avec la reconstruction des rives de Vidy, amorçant le développement d’un nouveau quartier de la ville. </p>
+			<p>Durant ces trente années d’activité, Cinéac et sa production de reportages constitue un regard précieux sur une histoire locale, une vision privilégiée sur les habitudes d’un passé récent, des moments de la vie publique lausannoise, d’une collection d’éléments qui ont contribué à construire l’imaginaire collectif lausannois qu’il est important de valoriser et préserver. </p>
+
+
+  		</div>
+  		</div>
+
+
+	</div>
+        <span class="openbtn" onclick="open_page()"><i class="fa fa-home"></i></span>
+        <div class="title" >
+            CINEAC LAUSANNE
         </div>
 
         <div class="panes">
 
             <div class="index_pane sub_pane">
-            	<span onclick="open_filter()" class="filter_btn">&#9776</span>
+            	<span onclick="open_filter()" class="filter_btn"><i class="fa fa-search"></i> Filtre</span>
                 <div class="sub_title">
                     Index
                 </div>
+                <hr>
                 <div id="filter_pane" style="display:none">
-                	<div class="sub_title">Filter</div>
 
                 	<div class="filter_line"><input type="checkbox" id="filter_date"><span>Date du </span><input id="filter_debut" type="date" value="1900-01-01">
                 	<span> au </span><input id="filter_fin" type="date" value="2000-01-01"></div>
@@ -56,7 +84,7 @@
 						<option value="Avant-guerre (1929-1938)">Avant-guerre (1929-1938)</option>
 						
 					</select></div>
-
+					<hr>
                 </div>
 	            <div class="scroll_pane">
 	                <div class="index">
@@ -76,7 +104,8 @@
             </div>
 
             <div class="map_pane sub_pane">
-                <div class="sub_title">
+            	<span > </span>
+                <div class="sub_title tpad">
                     Map
                 </div>
                 <div class="scroll_pane">
@@ -91,7 +120,8 @@
             </div>
 
             <div class="video_pane sub_pane">
-                <div class="sub_title">
+            	<span > </span>
+                <div class="sub_title tpad">
                     Video
                 </div>
                 <div class="scroll_pane">

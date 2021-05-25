@@ -308,7 +308,7 @@ function load_articles(index) {
 	articles.forEach(function(item) {
 		$("#map_desc").append(`<div class="article_title">${item["name"]}</div>`);
 		$("#map_desc").append(`<div class="article_text">${item["text"]}</div>`);
-		$("#map_desc").append(`<div class="article_citation"><a href="${item['link']}">[${item["auteur"]}, ${item["name"]}, ${item["journal"]}, ${item["date"]}, page ${item["page"]}</a></div>`);
+		$("#map_desc").append(`<div class="article_citation"><a href="${item['link']}">[${item["auteur"]}, ${item["name"]}, ${item["journal"]}, ${item["date"]}, page ${item["page"]}</a></div><hr>`);
 
 	});
 
@@ -390,4 +390,14 @@ function load_view(index) {
 
 function open_filter(){
 	$("#filter_pane").toggle();
+}
+
+
+
+function open_page() {
+	$("#acceuil").css("height", "100vh");
+}
+
+function close_page() {
+	$("#acceuil").css("height", "0%");
 }
