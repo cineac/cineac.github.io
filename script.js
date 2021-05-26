@@ -65,6 +65,8 @@ $(document).ready(function() {
 
 	write_index();
 
+	create_legend();
+
 	$("#filter_debut").change( function(){
 		write_index();
 		console.log($("#filter_debut").val());
@@ -100,6 +102,24 @@ $(document).ready(function() {
 
 
 });
+
+
+function create_legend() {
+	var legend = L.control({position: 'bottomright'});
+
+	legend.onAdd = function (map) {
+
+	    var div = L.DomUtil.create('div', 'info legend');
+	    div.innerHTML +=
+	            '<img src="icons/marker-icon-2x-red.png" style="width:15px; margin-right:5px; margin-bottom:5px;"><span>Parade</span><br>'
+	            +'<img src="icons/marker-icon-2x-orange.png" style="width:15px; margin-right:5px; margin-bottom:5px;"><span>Politique</span><br>'
+	            +'<img src="icons/marker-icon-2x-green.png" style="width:15px; margin-right:5px; margin-bottom:5px;"><span>Loisirs</span><br>'; 
+
+	    return div;
+	};
+
+	legend.addTo(mymap);
+}
 
 
 
