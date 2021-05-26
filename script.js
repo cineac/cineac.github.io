@@ -325,11 +325,11 @@ function load_metadata(index) {
 	$("#video_desc").html('<table style="width:100%">');
 	$("#video_desc").append(`<tr class="video_desc_item"><td>Nom</td><td>${properties["name"]}</td></tr>`);
 	$("#video_desc").append(`<tr class="video_desc_item"><td>Epoque</td><td>${properties["époque"]}</td></tr>`);
-	$("#video_desc").append(`<tr class="video_desc_item"><td>Theme</td><td>${properties["thème"]}</td></tr>`);
+	$("#video_desc").append(`<tr class="video_desc_item"><td>Thème</td><td>${properties["thème"]}</td></tr>`);
 	$("#video_desc").append(`<tr class="video_desc_item"><td>Lieu</td><td>${properties["place"]}</td></tr>`);
 	$("#video_desc").append(`<tr class="video_desc_item"><td>Date</td><td>${properties["date"]}</td></tr>`);
-	$("#video_desc").append(`<tr class="video_desc_item"><td>Autheur</td><td>${meta_data["author"]}</td></tr>`);
-	$("#video_desc").append(`<tr class="video_desc_item"><td>Evenement</td><td>${meta_data["event"]}</td></tr>`);
+	$("#video_desc").append(`<tr class="video_desc_item"><td>Auteur</td><td>${meta_data["author"]}</td></tr>`);
+	$("#video_desc").append(`<tr class="video_desc_item"><td>Evènement</td><td>${meta_data["event"]}</td></tr>`);
 	$("#video_desc").append(`<tr class="video_desc_item"><td>Personnalités</td><td>${meta_data["persons"]}</td></tr>`);
 	$("#video_desc").append(`<tr class="video_desc_item"><td>Données techniques</td><td>${meta_data["data"]}</td></tr>`);
 	$("#video_desc").append(`<tr class="video_desc_item"><td>Description</td><td>${meta_data["desc"]}</td></tr>`);
