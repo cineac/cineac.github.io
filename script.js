@@ -50,7 +50,7 @@ var icon_orange = L.icon({
 $(document).ready(function() {
 
 
-    mymap = L.map('mapid').setView(L.latLng(46.521902, 6.629844), 15);
+    mymap = L.map('mapid').setView(L.latLng(46.521902, 6.629844), 13);
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 18,
